@@ -15,3 +15,7 @@ Elbo Method
 **NB:** the code for these methods can be found in link provided above.
 
   
+### K-means clustering
+Clustering can be defined as grouping observations with similar characteristics in a dataset. Observations wihtin the same clusters have similar characteristics and properties, whilst observations in different clusters are dissimilar. similarities within clusters are based on calculated distances. The most widely used metrics for calculating distance between two points are: Euclidean and Manhattan.
+
+In K-means clustering, the centre of each cluster, or centroid, correpsonds to the mean of the points allocated to the cluster. The fundamental principle of k-means clustering is to define clusters with the aim of minimizing intra-cluster variablity, also known as total within-clusters variation.
