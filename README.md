@@ -12,7 +12,6 @@ Elbo Method
 - Gap Statistic Method
 - calinski - Harabasz Method
 - Davies - Bouldin Method
-- 
 **NB:** the code for these methods can be found in link provided above.
 
   
