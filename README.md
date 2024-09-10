@@ -21,6 +21,7 @@ Elbo Method
 Clustering can be defined as grouping observations with similar characteristics in a dataset. Observations wihtin the same clusters have similar characteristics and properties, whilst observations in different clusters are dissimilar. similarities within clusters are based on calculated distances. The most widely used metrics for calculating distance between two points are: Euclidean and Manhattan.
 
 ***key characteristics between Euclidean and Manhanttan:***
+
 **Euclidean:**
 - distance metrics uses sum of the squared differences.
 - Straight-line Distance measures the shortest path (the hypotenuse) between two points - suitable for direct distances.
