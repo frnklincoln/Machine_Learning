@@ -7,14 +7,12 @@
 sample_size = min(8000, len(df)) # ensure the sample size does not exceed the available rows
 sampled_data = df.sample(n = sample_size, random_state = 42, replace = False)
 ```
-**sample data with replacement** - selecting the same row multiple times
-
+**Sample data with replacement** - selecting the same row multiple times
 ```python
 sample_size = min(8000, len(df)) # ensure the sample size does not exceed the available rows
 sampled_data = df.sample(n = sample_size, random_state = 42, replace = True)
 ```
 **Using Fractional Sampling:** if you want to sample a certain fraction of the dataset, you can use the 'frac' arugment instead.
-
 ```python
 # sample 80% of the dataset
 sampled_data = df.sample(frac = 0.8, random_state = 42) # random_state is for reproducibility
