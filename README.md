@@ -35,7 +35,7 @@ Clustering can be defined as grouping observations with similar characteristics 
 - It is robust to outliers due to absolute values - less sensitive to extreme differences.
 - Manhattan tends to produce rectangular clusters.
 
-
+[link](https://www.udemy.com/) to figures that shows differences between Eclidean and Manhattan
 
 In K-means clustering, the centre of each cluster, or centroid, correpsonds to the mean of the points allocated to the cluster. The fundamental principle of k-means clustering is to define clusters with the aim of minimizing intra-cluster variablity, also known as total within-clusters variation.
 
