@@ -17,6 +17,10 @@ sampled_data = df.sample(n = sample_size, random_state = 42, replace = True)
 # sample 80% of the dataset
 sampled_data = df.sample(frac = 0.8, random_state = 42) # random_state is for reproducibility
 ```
+**Saving to a Specific Path**
+```python
+df.to_csv("\path\to\directory\gene_expression_data.csv", index = False)
+```
 
 
 
