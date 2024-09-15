@@ -1,5 +1,27 @@
 # Machine_Learning
 
+### Get the working directory
+```python
+# Load the os modu
+import os
+print(os.getcwd())
+```
+### Dealing with numeric-only columns
+```python
+numeric_df = df.select_dtypes(include = ['number'])
+```
+### check for a list of variables
+```python
+print(globals())
+list(globals().keys())
+
+```
+
+### Deleting variables
+```python
+del variable1, varialbe2
+```
+
 
 ### Data preparation
 **Sample data without replacement** - meaning you don't want to select the same row multiple times.
