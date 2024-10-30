@@ -44,7 +44,14 @@ sampled_data = df.sample(frac = 0.8, random_state = 42) # random_state is for re
 df.to_csv("\path\to\directory\gene_expression_data.csv", index = False)
 ```
 
-
+## Supervised Learning in Python:
+The very basic implementation of building and training a model to make predictions:
+ - import the data
+ - create a model
+   ```python
+   
+   ```
+ - train the model
 
 
 
