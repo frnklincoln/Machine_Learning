@@ -1,5 +1,6 @@
-# Machine_Learning
-For a complete beginner looking to learn machine learning using gene expression datasets, there are several fundamental concepts and steps to understand:
+# Machine Learning
+Unsupervised Learning: detection of patterns in data without any labelling
+Supervised: Using patterns found in "training", or labelled data, to predict or "classify" a new dataset
 
 ## Data Understanding
 
