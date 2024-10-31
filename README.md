@@ -1,4 +1,96 @@
 # Machine_Learning
+For a complete beginner looking to learn machine learning using gene expression datasets, there are several fundamental concepts and steps to understand:
+
+## Data Understanding
+
+### Gene Expression Data
+Gene expression data typically consists of measurements of gene activity levels across multiple samples. Each sample represents a patient or condition, and each feature represents a gene[1][2].
+
+### Data Structure
+Gene expression datasets often have:
+- Many features (genes) but relatively few samples
+- High dimensionality
+- Potential for noise and batch effects
+
+## Machine Learning Basics
+
+### Types of Machine Learning Problems
+For gene expression data, common tasks include:
+- Classification (e.g., distinguishing cancer types)
+- Clustering (e.g., finding groups of similar samples)
+- Feature selection (identifying important genes)
+
+### Key Concepts
+1. **Supervised vs. Unsupervised Learning**: Understand the difference between learning with labeled data (supervised) and without labels (unsupervised)[1].
+
+2. **Train-Test Split**: Learn to divide data into training and testing sets to evaluate model performance[1].
+
+3. **Cross-validation**: Understand techniques to assess model performance and avoid overfitting[1].
+
+## Data Preprocessing
+
+### Essential Steps
+1. **Data Normalization**: Adjust for technical variations between samples[2].
+2. **Feature Selection**: Identify the most informative genes[1][2].
+3. **Dimensionality Reduction**: Techniques like PCA to handle high-dimensional data[2].
+
+## Machine Learning Algorithms
+
+### Common Algorithms for Gene Expression Data
+1. Support Vector Machines (SVM)
+2. Random Forests
+3. k-Nearest Neighbors (k-NN)
+4. Neural Networks
+
+Learn the basics of how these algorithms work and when to use them[1][3].
+
+## Model Evaluation
+
+### Metrics
+Understand common evaluation metrics:
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- ROC curves
+
+### Interpretation
+Learn to interpret results in the context of biological significance[1].
+
+## Tools and Libraries
+
+### Programming Languages
+R and Python are commonly used in bioinformatics and machine learning.
+
+### Key Libraries
+- For R: Bioconductor, DESeq2, MLSeq
+- For Python: scikit-learn, pandas, numpy, matplotlib
+
+## Practical Skills
+
+1. **Data Manipulation**: Learn to handle and transform gene expression matrices[2].
+2. **Visualization**: Create informative plots (e.g., heatmaps, PCA plots)[2].
+3. **Statistical Analysis**: Understand basic statistical concepts relevant to gene expression analysis[1].
+
+## Bioinformatics Knowledge
+
+Having a basic understanding of molecular biology and genetics will help in interpreting results and designing meaningful experiments[3].
+
+By focusing on these fundamentals, beginners can build a solid foundation for applying machine learning to gene expression data. It's important to start with simple datasets and gradually progress to more complex analyses as your understanding grows[1][2][3].
+
+Citations:
+[1] https://www.bioconductor.org/help/course-materials/2015/SeattleApr2015/D_MachineLearning.html
+[2] https://openpress.universityofgalway.ie/genomicsdatascience/chapter/machine-learning-clustering/
+[3] https://www.youtube.com/watch?v=IYzjpnBv2l4
+[4] https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giad111/7516260
+[5] https://github.com/fredhutchio/ml-pancancer-example/blob/main/2-Tutorials/Tutorial%201%20-%20Beginner.ipynb
+[6] https://pmc.ncbi.nlm.nih.gov/articles/PMC4908320/
+[7] https://www.sciencedirect.com/science/article/pii/S0006291X24007617
+[8] https://www.youtube.com/watch?v=0xdCbt1hfSI
+
+
+
+
 There have been several classification and feature selection methods utilized to identify differentially expressed genes in microarray data.
 Such classifications include SVM, RBF Neural Netes, MLP Neural Nets, Bayesian, Decision Tree and Random Forest. The accuracies of these methods have been calculated using several validation methods such as v-fold validatiaon.
 
