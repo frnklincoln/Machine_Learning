@@ -1,4 +1,13 @@
 # Machine_Learning
+There have been several classification and feature selection methods utilized to identify differentially expressed genes in microarray data.
+Such classifications include SVM, RBF Neural Netes, MLP Neural Nets, Bayesian, Decision Tree and Random Forest. The accuracies of these methods have been calculated using several validation methods such as v-fold validatiaon.
+
+### Feature engineering
+A computational approach used to handle high dimenstional gene expression datasets.
+There are several techniques of feature engineering used in gene expression analysis:
+ - Filter: Removes irrelevant and redundant data features based on quantifying the relationship between each feature and the target predicted variable
+ - Wrapper: Utilizes a classification algorithm for evaluating the importance of data features, where the classifier is wrapped in a search algorithm to discover the best subset of data features
+ -  Embedded: This method identifies important features that enchance the performance of a classification algorithm by embedding the feature engineering technique into the learning stage of the classifier
 
 ### Get the working directory
 ```python
@@ -47,14 +56,40 @@ df.to_csv("\path\to\directory\gene_expression_data.csv", index = False)
 ## Supervised Learning in Python:
 The very basic implementation of building and training a model to make predictions:
  - import the data
+   ```python
+   import pandas as pd
+   from sklearn.tree import DecisionTreeClassifier
+   from sklearn.externals import joblib
+   from sklearn import tree
+   data = pd.read_csv(path/to/file)
+   X = data.drop(coloumns = ['target']
+   y = data['target']
+   ```
  - create a model
    ```python
-   
+   model = DecisionTreeClassifier()
+   model.fit(X, y)
+   # Save the file
+   joblib.dump(model, 'Training-model.joblib')
    ```
  - train the model
+```python
 
-
-
+```
+Model persistance using joblib.dump() - allows you to save a file when your model has been built and trained. This prevent you from having to build and train the model each time a new dataset is to be tested (line 53).
+To load the model:
+```python
+model = joblib.load('path/to/Training-model.joblib)
+```
+- Visualizing Decision Trees
+  NB: The '.dot' in the out_file argument is a graphical description language.
+```python
+tree.export_graphviz(model, out_file = 'music-recommender.dot',
+feature_names = ['age', 'gender', class_names = sorted(y.unique())]),
+label = 'all'
+rounded = True,
+filled = True)
+```
 
 
 
